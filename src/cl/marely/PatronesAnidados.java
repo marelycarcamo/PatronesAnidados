@@ -22,11 +22,7 @@ public class PatronesAnidados {
 		System.out.println("*** PATRON 1 ***\n");
 		for (int i = 1; i <= x; i++) {
 			for (int j = 1; j <= x; j++) {
-				if (i == 1 || i == x || j == 1 || j == x) {
-					System.out.print("X");
-				} else {
-					System.out.print(" ");
-				}
+				System.out.print((i == 1 || i == x || j == 1 || j == x) ? "X" : " ");
 			}
 			System.out.println();
 		}
@@ -40,13 +36,8 @@ public class PatronesAnidados {
 
 		System.out.println("*** PATRON 2 ***\n");
 		for (int j = 1; j <= n; j++) {
-
 			for (int i = 1; i <= n; i++) {
-				if (j == 1 || j == n || i == n - j + 1) {
-					System.out.print("X");
-				} else {
-					System.out.print("\s");
-				}
+				System.out.print((j == 1 || j == n || i == n - j + 1) ? "X" : " ");
 			}
 			System.out.println();
 		}
@@ -60,13 +51,9 @@ public class PatronesAnidados {
 
 		int x = n;
 		System.out.println("*** PATRON 3 ***\n");
-		for ( int j = 1; j <= n; j++) {
+		for (int j = 1; j <= n; j++) {
 			for (int i = 1; i <= n; i++) {
-				if ((i == x) || (i == j)) {
-					System.out.print("X");
-				} else {
-					System.out.print(" ");
-				}
+				System.out.print((i == x) || (i == j) ? "X" : " ");
 			}
 			System.out.println();
 			x--;
@@ -78,16 +65,10 @@ public class PatronesAnidados {
 	 */
 
 	private static void patron4() {
-		int i = 1;
-		int j = 1;
 		System.out.println("*** PATRON 4 ***\n");
-		for (j = 1; j <= n; j++) {
-			for (i = 1; i <= n; i++) {
-				if (((i == 1) && (j != 1)) || ((i == n) && (j != n))) {
-					System.out.print(" ");
-				} else {
-					System.out.print("X");
-				}
+		for (int j = 1; j <= n; j++) {
+			for (int i = 1; i <= n; i++) {
+				System.out.print(((i == 1) && (j != 1)) || ((i == n) && (j != n)) ? " " : "X");
 			}
 			System.out.println();
 		}
