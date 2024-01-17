@@ -1,8 +1,8 @@
-#PATRONES ANIDADOS
+# ´**PATRONES ANIDADOS**´
 
 Este repositorio contiene un programa en Java llamado PatronesAnidados. Este programa se utiliza para generar y mostrar cuatro patrones diferentes basados en un número n ingresado por el usuario.
 
-##------------- DESCRIPCION ---------------
+## ------------- DESCRIPCION ---------------
 
 El programa PatronesAnidados solicita al usuario que ingrese un número n. Luego, genera y muestra cuatro patrones diferentes basados en este número. Cada patrón es una matriz de n por n que contiene caracteres ‘X’ y espacios. La disposición de estos caracteres varía según el patrón:
 
